@@ -6,21 +6,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
-    private String[] mDataset = new String[20];
+    private ArrayList<Item> mDataset;
+    private String[] mDataset2 = new String[20];
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
-        public TextView mTextView;
+        public TextView mTextView,mTextView2;
 
         public ViewHolder(View itemView) {
             super(itemView);
             mTextView = (TextView)itemView.findViewById(R.id.text_view);
+            mTextView2 = (TextView)itemView.findViewById(R.id.text_view2);
         }
     }
 
-    public MyAdapter(String[] myDataset) {
-        mDataset = myDataset;
+    public MyAdapter(ArrayList<Item> list) {
+        mDataset = list;
     }
     @NonNull
     @Override
@@ -35,10 +39,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
        holder.mTextView.setText(mDataset[position]);
+        holder.mTextView2.setText(mDataset2[position]);
     }
 
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mDataset.size();
     }
 }
