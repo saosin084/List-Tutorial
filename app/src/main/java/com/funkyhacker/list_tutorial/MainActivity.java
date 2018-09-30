@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
      private RecyclerView.Adapter mAdapter;
      private RecyclerView.LayoutManager mLayoutManager;
 
-     private String[] myDataset = new String[20];
-     private String[] myDataset2 = new String[20];
+//     private String[] myDataset = new String[20];
+//     private String[] myDataset2 = new String[20];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,47 +28,47 @@ public class MainActivity extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        myDataset[0] = "ken";
-        myDataset[1] = "ai";
-        myDataset[2] = "yuta";
-        myDataset[3] = "megu";
-        myDataset[4] = "syou";
-        myDataset[5] = "saki";
-        myDataset[6] = "tetsu";
-        myDataset[7] = "mai";
-        myDataset[8] = "tarou";
-        myDataset[9] = "hanako";
-        myDataset[10] = "jiro";
-        myDataset[11] = "saki";
-        myDataset[12] = "tomoya";
-        myDataset[13] = "ayaka";
-        myDataset[14] = "syuji";
-        myDataset[15] = "momoko";
-        myDataset[16] = "koji";
-        myDataset[17] = "yuri";
-        myDataset[18] = "jyoji";
-        myDataset[19] = "kazu";
-
-        myDataset2[0] = "こんにちは";
-        myDataset2[1] = "よう";
-        myDataset2[2] = "やっほー";
-        myDataset2[3] = "元気？";
-        myDataset2[4] = "あのさー";
-        myDataset2[5] = "マジ？";
-        myDataset2[6] = "えー！";
-        myDataset2[7] = "そうなん";
-        myDataset2[8] = "すごいね";
-        myDataset2[9] = "あるある";
-        myDataset2[10] = "いやないよ";
-        myDataset2[11] = "こんばんは";
-        myDataset2[12] = "元気でね";
-        myDataset2[13] = "うんうん";
-        myDataset2[14] = "まいった";
-        myDataset2[15] = "ほんとに？";
-        myDataset2[16] = "嘘だー";
-        myDataset2[17] = "やるやる";
-        myDataset2[18] = "できない？";
-        myDataset2[19] = "もうええわ";
+//        myDataset[0] = "ken";
+//        myDataset[1] = "ai";
+//        myDataset[2] = "yuta";
+//        myDataset[3] = "megu";
+//        myDataset[4] = "syou";
+//        myDataset[5] = "saki";
+//        myDataset[6] = "tetsu";
+//        myDataset[7] = "mai";
+//        myDataset[8] = "tarou";
+//        myDataset[9] = "hanako";
+//        myDataset[10] = "jiro";
+//        myDataset[11] = "saki";
+//        myDataset[12] = "tomoya";
+//        myDataset[13] = "ayaka";
+//        myDataset[14] = "syuji";
+//        myDataset[15] = "momoko";
+//        myDataset[16] = "koji";
+//        myDataset[17] = "yuri";
+//        myDataset[18] = "jyoji";
+//        myDataset[19] = "kazu";
+//
+//        myDataset2[0] = "こんにちは";
+//        myDataset2[1] = "よう";
+//        myDataset2[2] = "やっほー";
+//        myDataset2[3] = "元気？";
+//        myDataset2[4] = "あのさー";
+//        myDataset2[5] = "マジ？";
+//        myDataset2[6] = "えー！";
+//        myDataset2[7] = "そうなん";
+//        myDataset2[8] = "すごいね";
+//        myDataset2[9] = "あるある";
+//        myDataset2[10] = "いやないよ";
+//        myDataset2[11] = "こんばんは";
+//        myDataset2[12] = "元気でね";
+//        myDataset2[13] = "うんうん";
+//        myDataset2[14] = "まいった";
+//        myDataset2[15] = "ほんとに？";
+//        myDataset2[16] = "嘘だー";
+//        myDataset2[17] = "やるやる";
+//        myDataset2[18] = "できない？";
+//        myDataset2[19] = "もうええわ";
 
 
 

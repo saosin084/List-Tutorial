@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
     private ArrayList<Item> mDataset;
-    private String[] mDataset2 = new String[20];
+    //private String[] mDataset2 = new String[20];
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         public TextView mTextView,mTextView2;
@@ -38,8 +38,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-       holder.mTextView.setText(mDataset[position]);
-        holder.mTextView2.setText(mDataset2[position]);
+        Item item = mDataset.get(position);
+       holder.mTextView.setText(item.getMname());
+     holder.mTextView2.setText(item.getMcomment());
     }
 
     @Override
