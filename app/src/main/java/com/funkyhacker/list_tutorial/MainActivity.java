@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,26 +75,26 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Item item0 = new Item("ken","00","こんにちは");
-        Item item1 = new Item("ai","01","よう");
-        Item item2 = new Item("yuta","02","やっほー");
-        Item item3 = new Item("megu","03","元気？");
-        Item item4 = new Item("syou","04","あのさー");
-        Item item5 = new Item("saki","05","マジ？");
-        Item item6 = new Item("fetsu" ,"06","えー");
-        Item item7 = new Item("mai","07","そうなん");
-        Item item8 = new Item("tarou","08","すごいね");
-        Item item9 = new Item("hanako","09","あるある");
-        Item item10 = new Item("jiro","10","ないよ");
-        Item item11 = new Item("saki","11","こんばんわ");
-        Item item12 = new Item("tomoya","12","元気で");
-        Item item13 = new Item("ayaka","13","うんうん");
-        Item item14 = new Item("syuji","14","まいった");
-        Item item15 = new Item("momoko","15","ほんと？");
-        Item item16 = new Item("koji","16","うそだ");
-        Item item17 = new Item("yuri","17","やるやる");
-        Item item18 = new Item("jyoji","18","できない");
-        Item item19 = new Item("kazu","19","おはよう");
+        Item item0 = new Item("ken","00","こんにちは",R.drawable.pika);
+        Item item1 = new Item("ai","01","よう",R.drawable.wani);
+        Item item2 = new Item("yuta","02","やっほー",R.drawable.toge);
+        Item item3 = new Item("megu","03","元気？",R.drawable.picyu);
+        Item item4 = new Item("syou","04","あのさー",R.drawable.mari);
+        Item item5 = new Item("saki","05","マジ？",R.drawable.pika);
+        Item item6 = new Item("fetsu" ,"06","えー",R.drawable.wani);
+        Item item7 = new Item("mai","07","そうなん",R.drawable.toge);
+        Item item8 = new Item("tarou","08","すごいね",R.drawable.picyu);
+        Item item9 = new Item("hanako","09","あるある",R.drawable.mari);
+        Item item10 = new Item("jiro","10","ないよ",R.drawable.pika);
+        Item item11 = new Item("saki","11","こんばんわ",R.drawable.wani);
+        Item item12 = new Item("tomoya","12","元気で",R.drawable.toge);
+        Item item13 = new Item("ayaka","13","うんうん",R.drawable.picyu);
+        Item item14 = new Item("syuji","14","まいった",R.drawable.mari);
+        Item item15 = new Item("momoko","15","ほんと？",R.drawable.pika);
+        Item item16 = new Item("koji","16","うそだ",R.drawable.wani);
+        Item item17 = new Item("yuri","17","やるやる",R.drawable.toge);
+        Item item18 = new Item("jyoji","18","できない",R.drawable.picyu);
+        Item item19 = new Item("kazu","19","おはよう",R.drawable.mari);
 
 
         ArrayList<Item> myList = new ArrayList<Item>();
@@ -121,8 +122,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         mAdapter = new MyAdapter(myList);
-
-
 
         mRecyclerView.setAdapter(mAdapter);
 
