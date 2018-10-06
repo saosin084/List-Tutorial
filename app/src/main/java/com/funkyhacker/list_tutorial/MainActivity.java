@@ -5,7 +5,12 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -128,6 +133,17 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.ItemDecoration itemDecoration =
                 new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
         mRecyclerView.addItemDecoration(itemDecoration);
+
+
+        Button button = findViewById(R.id.button);
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Request", "onClick");
+            }
+        };
+        button.setOnClickListener(listener);
+
     }
 
 }
